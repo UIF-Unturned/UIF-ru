@@ -19,7 +19,7 @@ namespace UIF
 		{
 			if (_items == null)
 			{
-				MessageBox.Show("Error in Item List.", "Error!");
+				MessageBox.Show("Ошибка в списке предметов.", "Ошибка!");
 				return;
 			}
 
@@ -186,5 +186,35 @@ namespace UIF
 
 			updateItemList();
 		}
-	}
+
+        private void ItemCapacityLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ResultsLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BodyDamageLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BuildingsDamageLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ItemType2Label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void InfoGroupBox_Enter(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

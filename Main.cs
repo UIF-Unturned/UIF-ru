@@ -59,7 +59,7 @@ namespace UIF
 		private void SearchNameBtn_Click(object sender, EventArgs e)
 		{
 			if (CurrentFolderPath == null)
-				MessageBox.Show("Folder is not specified!");
+				MessageBox.Show("Папка не указана!");
 			else
 			{
 				var items = Core.parseAll(CurrentFolderPath, i => i.name.ToLower().Contains(NameTextBox.Text.ToLower()));
@@ -71,7 +71,7 @@ namespace UIF
 		private void AllItemsBtn_Click(object sender, EventArgs e)
 		{
 			if (CurrentFolderPath == null)
-				MessageBox.Show("Folder is not specified!");
+				MessageBox.Show("Папка не указана!");
 			else
 			{
 				new ItemsCategories(CurrentFolderPath).ShowDialog();
@@ -102,7 +102,7 @@ namespace UIF
 
 				updateRegistry();
 			} else
-				MessageBox.Show("Folder isn't selected");
+				MessageBox.Show("Папка не выбрана");
 		}
 
 		private void OpenFldrBtn_Click(object sender, EventArgs e)
@@ -110,13 +110,13 @@ namespace UIF
 			if (Directory.Exists(CurrentFolderPath))
 				Process.Start("explorer.exe", CurrentFolderPath);
 			else
-				MessageBox.Show("Folder isn't selected");
+				MessageBox.Show("Папка не выбрана");
 		}
 
 		private void SearchIDButton_Click(object sender, EventArgs e)
 		{
 			if (CurrentFolderPath == null)
-				MessageBox.Show("Folder is not specified!");
+				MessageBox.Show("Папка не указана!");
 			else
 			{
 				var items = Core.parseAll(CurrentFolderPath, i => i.id == int.Parse(IDBox.Text));
@@ -137,9 +137,19 @@ namespace UIF
 
 		private void FldrComboBox_TextUpdate(object sender, EventArgs e)
 		{
-			FldrComboBox.Text = "Input disabled! [Choose variant or create one more]";
+			FldrComboBox.Text = "Ввод отключен! [Выберите вариант или создайте еще один]";
 			FldrComboBox.SelectedIndex = -1;
 			CurrentFolderPath = null;
 		}
-	}
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
