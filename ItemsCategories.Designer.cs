@@ -408,7 +408,7 @@
             this.SemiGunsBtn.Size = new System.Drawing.Size(172, 28);
             this.SemiGunsBtn.TabIndex = 7;
             this.SemiGunsBtn.TabStop = false;
-            this.SemiGunsBtn.Text = "Одиночные/полуавтоматические";
+            this.SemiGunsBtn.Text = "Одиночные";
             this.SemiGunsBtn.UseVisualStyleBackColor = true;
             this.SemiGunsBtn.Click += new System.EventHandler(this.SemiGunsBtn_Click);
             // 

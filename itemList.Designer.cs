@@ -38,6 +38,8 @@
             this.NameLabel = new System.Windows.Forms.Label();
             this.IdToClipboard = new System.Windows.Forms.Button();
             this.ItemStatsGroupBox = new System.Windows.Forms.GroupBox();
+            this.ShakeTextBox = new System.Windows.Forms.TextBox();
+            this.ShakeLabel = new System.Windows.Forms.Label();
             this.ItemHealthTextBox = new System.Windows.Forms.TextBox();
             this.ItemHealthLabel = new System.Windows.Forms.Label();
             this.EngineTextBox = new System.Windows.Forms.TextBox();
@@ -64,6 +66,7 @@
             this.SortCapacityBtn = new System.Windows.Forms.Button();
             this.SortProtectionBtn = new System.Windows.Forms.Button();
             this.SortingGroupBox = new System.Windows.Forms.GroupBox();
+            this.SortByShakeBtn = new System.Windows.Forms.Button();
             this.SortByBuildingHealthBtn = new System.Windows.Forms.Button();
             this.SortBarricadeCapacityBtn = new System.Windows.Forms.Button();
             this.SortVehicleHealthBtn = new System.Windows.Forms.Button();
@@ -91,7 +94,7 @@
             this.ResultsListBox.FormattingEnabled = true;
             this.ResultsListBox.ItemHeight = 16;
             this.ResultsListBox.Location = new System.Drawing.Point(16, 36);
-            this.ResultsListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ResultsListBox.Margin = new System.Windows.Forms.Padding(4);
             this.ResultsListBox.Name = "ResultsListBox";
             this.ResultsListBox.Size = new System.Drawing.Size(221, 468);
             this.ResultsListBox.TabIndex = 6;
@@ -106,9 +109,9 @@
             this.InfoGroupBox.Controls.Add(this.NameLabel);
             this.InfoGroupBox.Controls.Add(this.IdToClipboard);
             this.InfoGroupBox.Location = new System.Drawing.Point(247, 36);
-            this.InfoGroupBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.InfoGroupBox.Margin = new System.Windows.Forms.Padding(4);
             this.InfoGroupBox.Name = "InfoGroupBox";
-            this.InfoGroupBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.InfoGroupBox.Padding = new System.Windows.Forms.Padding(4);
             this.InfoGroupBox.Size = new System.Drawing.Size(437, 114);
             this.InfoGroupBox.TabIndex = 5;
             this.InfoGroupBox.TabStop = false;
@@ -118,7 +121,7 @@
             // IdTextBox
             // 
             this.IdTextBox.Location = new System.Drawing.Point(120, 48);
-            this.IdTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.IdTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.IdTextBox.Name = "IdTextBox";
             this.IdTextBox.ReadOnly = true;
             this.IdTextBox.Size = new System.Drawing.Size(307, 22);
@@ -128,7 +131,7 @@
             // NameTextBox
             // 
             this.NameTextBox.Location = new System.Drawing.Point(120, 22);
-            this.NameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.NameTextBox.Name = "NameTextBox";
             this.NameTextBox.ReadOnly = true;
             this.NameTextBox.Size = new System.Drawing.Size(307, 22);
@@ -162,7 +165,7 @@
             // IdToClipboard
             // 
             this.IdToClipboard.Location = new System.Drawing.Point(120, 80);
-            this.IdToClipboard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.IdToClipboard.Margin = new System.Windows.Forms.Padding(4);
             this.IdToClipboard.Name = "IdToClipboard";
             this.IdToClipboard.Size = new System.Drawing.Size(308, 28);
             this.IdToClipboard.TabIndex = 4;
@@ -173,6 +176,8 @@
             // 
             // ItemStatsGroupBox
             // 
+            this.ItemStatsGroupBox.Controls.Add(this.ShakeTextBox);
+            this.ItemStatsGroupBox.Controls.Add(this.ShakeLabel);
             this.ItemStatsGroupBox.Controls.Add(this.ItemHealthTextBox);
             this.ItemStatsGroupBox.Controls.Add(this.ItemHealthLabel);
             this.ItemStatsGroupBox.Controls.Add(this.EngineTextBox);
@@ -196,18 +201,38 @@
             this.ItemStatsGroupBox.Controls.Add(this.ProtectionLabel);
             this.ItemStatsGroupBox.Controls.Add(this.ItemCapacityLabel);
             this.ItemStatsGroupBox.Location = new System.Drawing.Point(247, 158);
-            this.ItemStatsGroupBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ItemStatsGroupBox.Margin = new System.Windows.Forms.Padding(4);
             this.ItemStatsGroupBox.Name = "ItemStatsGroupBox";
-            this.ItemStatsGroupBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ItemStatsGroupBox.Padding = new System.Windows.Forms.Padding(4);
             this.ItemStatsGroupBox.Size = new System.Drawing.Size(437, 347);
             this.ItemStatsGroupBox.TabIndex = 4;
             this.ItemStatsGroupBox.TabStop = false;
             this.ItemStatsGroupBox.Text = "Item Stats";
             // 
+            // ShakeTextBox
+            // 
+            this.ShakeTextBox.Location = new System.Drawing.Point(345, 293);
+            this.ShakeTextBox.Name = "ShakeTextBox";
+            this.ShakeTextBox.ReadOnly = true;
+            this.ShakeTextBox.Size = new System.Drawing.Size(81, 22);
+            this.ShakeTextBox.TabIndex = 22;
+            this.ShakeTextBox.TabStop = false;
+            this.ShakeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // ShakeLabel
+            // 
+            this.ShakeLabel.AutoSize = true;
+            this.ShakeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ShakeLabel.Location = new System.Drawing.Point(8, 290);
+            this.ShakeLabel.Name = "ShakeLabel";
+            this.ShakeLabel.Size = new System.Drawing.Size(315, 25);
+            this.ShakeLabel.TabIndex = 23;
+            this.ShakeLabel.Text = "Множитель разброса на модуль";
+            // 
             // ItemHealthTextBox
             // 
             this.ItemHealthTextBox.Location = new System.Drawing.Point(345, 268);
-            this.ItemHealthTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ItemHealthTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.ItemHealthTextBox.Name = "ItemHealthTextBox";
             this.ItemHealthTextBox.ReadOnly = true;
             this.ItemHealthTextBox.Size = new System.Drawing.Size(81, 22);
@@ -219,7 +244,7 @@
             // 
             this.ItemHealthLabel.AutoSize = true;
             this.ItemHealthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ItemHealthLabel.Location = new System.Drawing.Point(8, 266);
+            this.ItemHealthLabel.Location = new System.Drawing.Point(8, 265);
             this.ItemHealthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ItemHealthLabel.Name = "ItemHealthLabel";
             this.ItemHealthLabel.Size = new System.Drawing.Size(263, 25);
@@ -229,7 +254,7 @@
             // EngineTextBox
             // 
             this.EngineTextBox.Location = new System.Drawing.Point(345, 244);
-            this.EngineTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EngineTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.EngineTextBox.Name = "EngineTextBox";
             this.EngineTextBox.ReadOnly = true;
             this.EngineTextBox.Size = new System.Drawing.Size(81, 22);
@@ -251,7 +276,7 @@
             // RangeTextBox
             // 
             this.RangeTextBox.Location = new System.Drawing.Point(345, 170);
-            this.RangeTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RangeTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.RangeTextBox.Name = "RangeTextBox";
             this.RangeTextBox.ReadOnly = true;
             this.RangeTextBox.Size = new System.Drawing.Size(81, 22);
@@ -262,7 +287,7 @@
             // ItemType2TextBox
             // 
             this.ItemType2TextBox.Location = new System.Drawing.Point(345, 219);
-            this.ItemType2TextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ItemType2TextBox.Margin = new System.Windows.Forms.Padding(4);
             this.ItemType2TextBox.Name = "ItemType2TextBox";
             this.ItemType2TextBox.ReadOnly = true;
             this.ItemType2TextBox.Size = new System.Drawing.Size(81, 22);
@@ -296,7 +321,7 @@
             // StructureDamageTextBox
             // 
             this.StructureDamageTextBox.Location = new System.Drawing.Point(345, 145);
-            this.StructureDamageTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StructureDamageTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.StructureDamageTextBox.Name = "StructureDamageTextBox";
             this.StructureDamageTextBox.ReadOnly = true;
             this.StructureDamageTextBox.Size = new System.Drawing.Size(81, 22);
@@ -307,7 +332,7 @@
             // ItemTypeTextBox
             // 
             this.ItemTypeTextBox.Location = new System.Drawing.Point(345, 194);
-            this.ItemTypeTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ItemTypeTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.ItemTypeTextBox.Name = "ItemTypeTextBox";
             this.ItemTypeTextBox.ReadOnly = true;
             this.ItemTypeTextBox.Size = new System.Drawing.Size(81, 22);
@@ -341,7 +366,7 @@
             // PlayerDamageTextBox
             // 
             this.PlayerDamageTextBox.Location = new System.Drawing.Point(345, 121);
-            this.PlayerDamageTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PlayerDamageTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.PlayerDamageTextBox.Name = "PlayerDamageTextBox";
             this.PlayerDamageTextBox.ReadOnly = true;
             this.PlayerDamageTextBox.Size = new System.Drawing.Size(81, 22);
@@ -352,7 +377,7 @@
             // DamageHeadTextBox
             // 
             this.DamageHeadTextBox.Location = new System.Drawing.Point(345, 71);
-            this.DamageHeadTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DamageHeadTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.DamageHeadTextBox.Name = "DamageHeadTextBox";
             this.DamageHeadTextBox.ReadOnly = true;
             this.DamageHeadTextBox.Size = new System.Drawing.Size(81, 22);
@@ -374,7 +399,7 @@
             // BodyDamageTextBox
             // 
             this.BodyDamageTextBox.Location = new System.Drawing.Point(345, 96);
-            this.BodyDamageTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BodyDamageTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.BodyDamageTextBox.Name = "BodyDamageTextBox";
             this.BodyDamageTextBox.ReadOnly = true;
             this.BodyDamageTextBox.Size = new System.Drawing.Size(81, 22);
@@ -385,7 +410,7 @@
             // ItemCapacityTextBox
             // 
             this.ItemCapacityTextBox.Location = new System.Drawing.Point(345, 22);
-            this.ItemCapacityTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ItemCapacityTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.ItemCapacityTextBox.Name = "ItemCapacityTextBox";
             this.ItemCapacityTextBox.ReadOnly = true;
             this.ItemCapacityTextBox.Size = new System.Drawing.Size(81, 22);
@@ -396,7 +421,7 @@
             // ProtectionTextBox
             // 
             this.ProtectionTextBox.Location = new System.Drawing.Point(345, 47);
-            this.ProtectionTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ProtectionTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.ProtectionTextBox.Name = "ProtectionTextBox";
             this.ProtectionTextBox.ReadOnly = true;
             this.ProtectionTextBox.Size = new System.Drawing.Size(81, 22);
@@ -453,19 +478,19 @@
             // SortDamagePlayersBtn
             // 
             this.SortDamagePlayersBtn.Location = new System.Drawing.Point(13, 95);
-            this.SortDamagePlayersBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SortDamagePlayersBtn.Margin = new System.Windows.Forms.Padding(4);
             this.SortDamagePlayersBtn.Name = "SortDamagePlayersBtn";
             this.SortDamagePlayersBtn.Size = new System.Drawing.Size(329, 28);
             this.SortDamagePlayersBtn.TabIndex = 4;
             this.SortDamagePlayersBtn.TabStop = false;
-            this.SortDamagePlayersBtn.Text = "Сортировка по урону игроков";
+            this.SortDamagePlayersBtn.Text = "Сортировка по урону игрокам";
             this.SortDamagePlayersBtn.UseVisualStyleBackColor = true;
             this.SortDamagePlayersBtn.Click += new System.EventHandler(this.SortDamagePlayersBtn_Click);
             // 
             // SortCapacityBtn
             // 
             this.SortCapacityBtn.Location = new System.Drawing.Point(13, 23);
-            this.SortCapacityBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SortCapacityBtn.Margin = new System.Windows.Forms.Padding(4);
             this.SortCapacityBtn.Name = "SortCapacityBtn";
             this.SortCapacityBtn.Size = new System.Drawing.Size(329, 28);
             this.SortCapacityBtn.TabIndex = 3;
@@ -477,7 +502,7 @@
             // SortProtectionBtn
             // 
             this.SortProtectionBtn.Location = new System.Drawing.Point(13, 59);
-            this.SortProtectionBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SortProtectionBtn.Margin = new System.Windows.Forms.Padding(4);
             this.SortProtectionBtn.Name = "SortProtectionBtn";
             this.SortProtectionBtn.Size = new System.Drawing.Size(329, 28);
             this.SortProtectionBtn.TabIndex = 2;
@@ -488,63 +513,75 @@
             // 
             // SortingGroupBox
             // 
+            this.SortingGroupBox.Controls.Add(this.SortByShakeBtn);
             this.SortingGroupBox.Controls.Add(this.SortByBuildingHealthBtn);
             this.SortingGroupBox.Controls.Add(this.SortBarricadeCapacityBtn);
+            this.SortingGroupBox.Controls.Add(this.MixBtn);
             this.SortingGroupBox.Controls.Add(this.SortVehicleHealthBtn);
             this.SortingGroupBox.Controls.Add(this.SortDamageBuildingsBtn);
-            this.SortingGroupBox.Controls.Add(this.MixBtn);
             this.SortingGroupBox.Controls.Add(this.SortProtectionBtn);
             this.SortingGroupBox.Controls.Add(this.SortCapacityBtn);
             this.SortingGroupBox.Controls.Add(this.SortDamagePlayersBtn);
             this.SortingGroupBox.Location = new System.Drawing.Point(692, 158);
-            this.SortingGroupBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SortingGroupBox.Margin = new System.Windows.Forms.Padding(4);
             this.SortingGroupBox.Name = "SortingGroupBox";
-            this.SortingGroupBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SortingGroupBox.Padding = new System.Windows.Forms.Padding(4);
             this.SortingGroupBox.Size = new System.Drawing.Size(351, 347);
             this.SortingGroupBox.TabIndex = 0;
             this.SortingGroupBox.TabStop = false;
             this.SortingGroupBox.Text = "Сортировка";
             // 
+            // SortByShakeBtn
+            // 
+            this.SortByShakeBtn.Location = new System.Drawing.Point(13, 201);
+            this.SortByShakeBtn.Name = "SortByShakeBtn";
+            this.SortByShakeBtn.Size = new System.Drawing.Size(329, 27);
+            this.SortByShakeBtn.TabIndex = 8;
+            this.SortByShakeBtn.TabStop = false;
+            this.SortByShakeBtn.Text = "Сортировать по множителю разброса модулей";
+            this.SortByShakeBtn.UseVisualStyleBackColor = true;
+            this.SortByShakeBtn.Click += new System.EventHandler(this.SortByShakeBtn_Click);
+            // 
             // SortByBuildingHealthBtn
             // 
-            this.SortByBuildingHealthBtn.Location = new System.Drawing.Point(13, 238);
-            this.SortByBuildingHealthBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SortByBuildingHealthBtn.Location = new System.Drawing.Point(13, 270);
+            this.SortByBuildingHealthBtn.Margin = new System.Windows.Forms.Padding(4);
             this.SortByBuildingHealthBtn.Name = "SortByBuildingHealthBtn";
-            this.SortByBuildingHealthBtn.Size = new System.Drawing.Size(329, 28);
+            this.SortByBuildingHealthBtn.Size = new System.Drawing.Size(330, 28);
             this.SortByBuildingHealthBtn.TabIndex = 7;
             this.SortByBuildingHealthBtn.TabStop = false;
-            this.SortByBuildingHealthBtn.Text = "Сортировать по здоровью";
+            this.SortByBuildingHealthBtn.Text = "Сортировать по HP постройки";
             this.SortByBuildingHealthBtn.UseVisualStyleBackColor = true;
             this.SortByBuildingHealthBtn.Click += new System.EventHandler(this.SortByBuildingHealthBtn_Click);
             // 
             // SortBarricadeCapacityBtn
             // 
-            this.SortBarricadeCapacityBtn.Location = new System.Drawing.Point(13, 202);
-            this.SortBarricadeCapacityBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SortBarricadeCapacityBtn.Location = new System.Drawing.Point(13, 235);
+            this.SortBarricadeCapacityBtn.Margin = new System.Windows.Forms.Padding(4);
             this.SortBarricadeCapacityBtn.Name = "SortBarricadeCapacityBtn";
-            this.SortBarricadeCapacityBtn.Size = new System.Drawing.Size(329, 28);
+            this.SortBarricadeCapacityBtn.Size = new System.Drawing.Size(329, 27);
             this.SortBarricadeCapacityBtn.TabIndex = 6;
             this.SortBarricadeCapacityBtn.TabStop = false;
-            this.SortBarricadeCapacityBtn.Text = "Сортировка по вместимости баррикад";
+            this.SortBarricadeCapacityBtn.Text = "Сортировать по вместительности баррикад";
             this.SortBarricadeCapacityBtn.UseVisualStyleBackColor = true;
             this.SortBarricadeCapacityBtn.Click += new System.EventHandler(this.SortBarricadeCapacityBtn_Click);
             // 
             // SortVehicleHealthBtn
             // 
             this.SortVehicleHealthBtn.Location = new System.Drawing.Point(13, 166);
-            this.SortVehicleHealthBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SortVehicleHealthBtn.Margin = new System.Windows.Forms.Padding(4);
             this.SortVehicleHealthBtn.Name = "SortVehicleHealthBtn";
             this.SortVehicleHealthBtn.Size = new System.Drawing.Size(329, 28);
             this.SortVehicleHealthBtn.TabIndex = 5;
             this.SortVehicleHealthBtn.TabStop = false;
-            this.SortVehicleHealthBtn.Text = "Сортировка по здоровью автомобиля";
+            this.SortVehicleHealthBtn.Text = "Сортировка по HP автомобиля";
             this.SortVehicleHealthBtn.UseVisualStyleBackColor = true;
             this.SortVehicleHealthBtn.Click += new System.EventHandler(this.SortVehicleHealthBtn_Click);
             // 
             // SortDamageBuildingsBtn
             // 
             this.SortDamageBuildingsBtn.Location = new System.Drawing.Point(13, 130);
-            this.SortDamageBuildingsBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SortDamageBuildingsBtn.Margin = new System.Windows.Forms.Padding(4);
             this.SortDamageBuildingsBtn.Name = "SortDamageBuildingsBtn";
             this.SortDamageBuildingsBtn.Size = new System.Drawing.Size(329, 28);
             this.SortDamageBuildingsBtn.TabIndex = 0;
@@ -555,8 +592,8 @@
             // 
             // MixBtn
             // 
-            this.MixBtn.Location = new System.Drawing.Point(13, 273);
-            this.MixBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MixBtn.Location = new System.Drawing.Point(14, 306);
+            this.MixBtn.Margin = new System.Windows.Forms.Padding(4);
             this.MixBtn.Name = "MixBtn";
             this.MixBtn.Size = new System.Drawing.Size(329, 28);
             this.MixBtn.TabIndex = 1;
@@ -577,7 +614,7 @@
             this.Controls.Add(this.ResultsLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "itemList";
             this.Text = "Список предметов";
@@ -632,5 +669,8 @@
         private System.Windows.Forms.Button SortVehicleHealthBtn;
         private System.Windows.Forms.Button SortBarricadeCapacityBtn;
         private System.Windows.Forms.Button SortByBuildingHealthBtn;
+        private System.Windows.Forms.Button SortByShakeBtn;
+        private System.Windows.Forms.TextBox ShakeTextBox;
+        private System.Windows.Forms.Label ShakeLabel;
     }
 }
