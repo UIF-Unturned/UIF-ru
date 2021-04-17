@@ -75,9 +75,9 @@
             this.SortByShakeBtn = new System.Windows.Forms.Button();
             this.SortByBuildingHealthBtn = new System.Windows.Forms.Button();
             this.SortBarricadeCapacityBtn = new System.Windows.Forms.Button();
+            this.MixBtn = new System.Windows.Forms.Button();
             this.SortVehicleHealthBtn = new System.Windows.Forms.Button();
             this.SortDamageBuildingsBtn = new System.Windows.Forms.Button();
-            this.MixBtn = new System.Windows.Forms.Button();
             this.InfoGroupBox.SuspendLayout();
             this.ItemStatsGroupBox.SuspendLayout();
             this.SortingGroupBox.SuspendLayout();
@@ -87,10 +87,9 @@
             // 
             this.ResultsLabel.AutoSize = true;
             this.ResultsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ResultsLabel.Location = new System.Drawing.Point(12, 11);
-            this.ResultsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ResultsLabel.Location = new System.Drawing.Point(9, 9);
             this.ResultsLabel.Name = "ResultsLabel";
-            this.ResultsLabel.Size = new System.Drawing.Size(177, 20);
+            this.ResultsLabel.Size = new System.Drawing.Size(140, 17);
             this.ResultsLabel.TabIndex = 7;
             this.ResultsLabel.Text = "Результаты поиска:";
             this.ResultsLabel.Click += new System.EventHandler(this.ResultsLabel_Click);
@@ -98,11 +97,9 @@
             // ResultsListBox
             // 
             this.ResultsListBox.FormattingEnabled = true;
-            this.ResultsListBox.ItemHeight = 16;
-            this.ResultsListBox.Location = new System.Drawing.Point(16, 36);
-            this.ResultsListBox.Margin = new System.Windows.Forms.Padding(4);
+            this.ResultsListBox.Location = new System.Drawing.Point(12, 29);
             this.ResultsListBox.Name = "ResultsListBox";
-            this.ResultsListBox.Size = new System.Drawing.Size(221, 468);
+            this.ResultsListBox.Size = new System.Drawing.Size(167, 407);
             this.ResultsListBox.TabIndex = 6;
             this.ResultsListBox.TabStop = false;
             this.ResultsListBox.SelectedIndexChanged += new System.EventHandler(this.ResultsListBox_SelectedIndexChanged);
@@ -114,11 +111,9 @@
             this.InfoGroupBox.Controls.Add(this.IdLabel);
             this.InfoGroupBox.Controls.Add(this.NameLabel);
             this.InfoGroupBox.Controls.Add(this.IdToClipboard);
-            this.InfoGroupBox.Location = new System.Drawing.Point(247, 36);
-            this.InfoGroupBox.Margin = new System.Windows.Forms.Padding(4);
+            this.InfoGroupBox.Location = new System.Drawing.Point(185, 29);
             this.InfoGroupBox.Name = "InfoGroupBox";
-            this.InfoGroupBox.Padding = new System.Windows.Forms.Padding(4);
-            this.InfoGroupBox.Size = new System.Drawing.Size(437, 114);
+            this.InfoGroupBox.Size = new System.Drawing.Size(328, 93);
             this.InfoGroupBox.TabIndex = 5;
             this.InfoGroupBox.TabStop = false;
             this.InfoGroupBox.Text = "Инфо";
@@ -126,21 +121,19 @@
             // 
             // IdTextBox
             // 
-            this.IdTextBox.Location = new System.Drawing.Point(120, 48);
-            this.IdTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.IdTextBox.Location = new System.Drawing.Point(90, 39);
             this.IdTextBox.Name = "IdTextBox";
             this.IdTextBox.ReadOnly = true;
-            this.IdTextBox.Size = new System.Drawing.Size(307, 22);
+            this.IdTextBox.Size = new System.Drawing.Size(231, 20);
             this.IdTextBox.TabIndex = 0;
             this.IdTextBox.TabStop = false;
             // 
             // NameTextBox
             // 
-            this.NameTextBox.Location = new System.Drawing.Point(120, 22);
-            this.NameTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.NameTextBox.Location = new System.Drawing.Point(90, 18);
             this.NameTextBox.Name = "NameTextBox";
             this.NameTextBox.ReadOnly = true;
-            this.NameTextBox.Size = new System.Drawing.Size(307, 22);
+            this.NameTextBox.Size = new System.Drawing.Size(231, 20);
             this.NameTextBox.TabIndex = 1;
             this.NameTextBox.TabStop = false;
             // 
@@ -148,10 +141,9 @@
             // 
             this.IdLabel.AutoSize = true;
             this.IdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.IdLabel.Location = new System.Drawing.Point(8, 46);
-            this.IdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.IdLabel.Location = new System.Drawing.Point(6, 37);
             this.IdLabel.Name = "IdLabel";
-            this.IdLabel.Size = new System.Drawing.Size(42, 25);
+            this.IdLabel.Size = new System.Drawing.Size(34, 20);
             this.IdLabel.TabIndex = 2;
             this.IdLabel.Text = "ID: ";
             this.IdLabel.Click += new System.EventHandler(this.IdLabel_Click);
@@ -160,20 +152,18 @@
             // 
             this.NameLabel.AutoSize = true;
             this.NameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.NameLabel.Location = new System.Drawing.Point(8, 20);
-            this.NameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.NameLabel.Location = new System.Drawing.Point(6, 16);
             this.NameLabel.Name = "NameLabel";
-            this.NameLabel.Size = new System.Drawing.Size(110, 25);
+            this.NameLabel.Size = new System.Drawing.Size(91, 20);
             this.NameLabel.TabIndex = 3;
             this.NameLabel.Text = "Название: ";
             this.NameLabel.Click += new System.EventHandler(this.NameLabel_Click);
             // 
             // IdToClipboard
             // 
-            this.IdToClipboard.Location = new System.Drawing.Point(120, 80);
-            this.IdToClipboard.Margin = new System.Windows.Forms.Padding(4);
+            this.IdToClipboard.Location = new System.Drawing.Point(90, 65);
             this.IdToClipboard.Name = "IdToClipboard";
-            this.IdToClipboard.Size = new System.Drawing.Size(308, 28);
+            this.IdToClipboard.Size = new System.Drawing.Size(231, 23);
             this.IdToClipboard.TabIndex = 4;
             this.IdToClipboard.TabStop = false;
             this.IdToClipboard.Text = "Скопировать ID в буфер обмена";
@@ -210,23 +200,18 @@
             this.ItemStatsGroupBox.Controls.Add(this.HeadDamageLabel);
             this.ItemStatsGroupBox.Controls.Add(this.ProtectionLabel);
             this.ItemStatsGroupBox.Controls.Add(this.ItemCapacityLabel);
-            this.ItemStatsGroupBox.Location = new System.Drawing.Point(247, 158);
-            this.ItemStatsGroupBox.Margin = new System.Windows.Forms.Padding(4);
+            this.ItemStatsGroupBox.Location = new System.Drawing.Point(185, 128);
             this.ItemStatsGroupBox.Name = "ItemStatsGroupBox";
+            this.ItemStatsGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ItemStatsGroupBox.Size = new System.Drawing.Size(328, 308);
             this.ItemStatsGroupBox.TabIndex = 4;
             this.ItemStatsGroupBox.TabStop = false;
             this.ItemStatsGroupBox.Text = "Item Stats";
             // 
-            // ShakeTextBox
-            // 
-            this.ShakeTextBox.Location = new System.Drawing.Point(345, 293);
-            this.ShakeTextBox.Name = "ShakeTextBox";
-            this.ShakeTextBox.ReadOnly = true;
-            this.ShakeTextBox.Size = new System.Drawing.Size(81, 22);
             // BarrelDamageTextBox
             // 
-            this.BarrelDamageTextBox.Location = new System.Drawing.Point(259, 278);
+            this.BarrelDamageTextBox.Location = new System.Drawing.Point(259, 277);
+            this.BarrelDamageTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BarrelDamageTextBox.Name = "BarrelDamageTextBox";
             this.BarrelDamageTextBox.ReadOnly = true;
             this.BarrelDamageTextBox.Size = new System.Drawing.Size(62, 20);
@@ -238,86 +223,89 @@
             // 
             this.BarrelDamageLabel.AutoSize = true;
             this.BarrelDamageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.BarrelDamageLabel.Location = new System.Drawing.Point(6, 276);
+            this.BarrelDamageLabel.Location = new System.Drawing.Point(4, 275);
+            this.BarrelDamageLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.BarrelDamageLabel.Name = "BarrelDamageLabel";
-            this.BarrelDamageLabel.Size = new System.Drawing.Size(117, 20);
+            this.BarrelDamageLabel.Size = new System.Drawing.Size(111, 20);
             this.BarrelDamageLabel.TabIndex = 27;
-            this.BarrelDamageLabel.Text = "Barrel damage:";
+            this.BarrelDamageLabel.Text = "Урон модуля:";
+            this.BarrelDamageLabel.Click += new System.EventHandler(this.BarrelDamageLabel_Click);
             // 
             // VolumeTextBox
             // 
-            this.VolumeTextBox.Location = new System.Drawing.Point(259, 258);
+            this.VolumeTextBox.Location = new System.Drawing.Point(259, 237);
+            this.VolumeTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.VolumeTextBox.Name = "VolumeTextBox";
             this.VolumeTextBox.ReadOnly = true;
             this.VolumeTextBox.Size = new System.Drawing.Size(62, 20);
             this.VolumeTextBox.TabIndex = 24;
             this.VolumeTextBox.TabStop = false;
             this.VolumeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.VolumeTextBox.TextChanged += new System.EventHandler(this.VolumeTextBox_TextChanged);
             // 
             // VolumeLabel
             // 
             this.VolumeLabel.AutoSize = true;
             this.VolumeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.VolumeLabel.Location = new System.Drawing.Point(6, 256);
+            this.VolumeLabel.Location = new System.Drawing.Point(6, 235);
+            this.VolumeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.VolumeLabel.Name = "VolumeLabel";
-            this.VolumeLabel.Size = new System.Drawing.Size(215, 20);
+            this.VolumeLabel.Size = new System.Drawing.Size(181, 20);
             this.VolumeLabel.TabIndex = 25;
-            this.VolumeLabel.Text = "Suppressor volume multiplier:";
+            this.VolumeLabel.Text = "Громкость глушителя:";
+            this.VolumeLabel.Click += new System.EventHandler(this.VolumeLabel_Click);
             // 
             // ShakeTextBox
             // 
-            this.ShakeTextBox.Location = new System.Drawing.Point(259, 238);
+            this.ShakeTextBox.Location = new System.Drawing.Point(259, 257);
+            this.ShakeTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ShakeTextBox.Name = "ShakeTextBox";
             this.ShakeTextBox.ReadOnly = true;
             this.ShakeTextBox.Size = new System.Drawing.Size(62, 20);
             this.ShakeTextBox.TabIndex = 22;
             this.ShakeTextBox.TabStop = false;
             this.ShakeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ShakeTextBox.TextChanged += new System.EventHandler(this.ShakeTextBox_TextChanged);
             // 
             // ShakeLabel
             // 
             this.ShakeLabel.AutoSize = true;
             this.ShakeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ShakeLabel.Size = new System.Drawing.Size(315, 25);
-            this.ShakeLabel.TabIndex = 23;
-            this.ShakeLabel.Location = new System.Drawing.Point(8, 290);
+            this.ShakeLabel.Location = new System.Drawing.Point(6, 255);
+            this.ShakeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ShakeLabel.Name = "ShakeLabel";
-            this.ShakeLabel.Text = "Множитель разброса на модуль";
-            this.ShakeLabel.Location = new System.Drawing.Point(6, 236);
-            this.ShakeLabel.Name = "ShakeLabel";
-            this.ShakeLabel.Size = new System.Drawing.Size(202, 20);
+            this.ShakeLabel.Size = new System.Drawing.Size(258, 20);
             this.ShakeLabel.TabIndex = 23;
-            this.ShakeLabel.Text = "Grip/Barrel shake multiplier:";
+            this.ShakeLabel.Text = "Множитель разброса на модуль:";
             // 
             // ItemHealthTextBox
             // 
-            this.ItemHealthTextBox.Location = new System.Drawing.Point(345, 268);
-            this.ItemHealthTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.ItemHealthTextBox.Location = new System.Drawing.Point(259, 218);
             this.ItemHealthTextBox.Name = "ItemHealthTextBox";
             this.ItemHealthTextBox.ReadOnly = true;
-            this.ItemHealthTextBox.Size = new System.Drawing.Size(81, 22);
+            this.ItemHealthTextBox.Size = new System.Drawing.Size(62, 20);
             this.ItemHealthTextBox.TabIndex = 18;
             this.ItemHealthTextBox.TabStop = false;
             this.ItemHealthTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ItemHealthTextBox.TextChanged += new System.EventHandler(this.ItemHealthTextBox_TextChanged);
             // 
             // ItemHealthLabel
             // 
             this.ItemHealthLabel.AutoSize = true;
             this.ItemHealthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ItemHealthLabel.Location = new System.Drawing.Point(8, 265);
-            this.ItemHealthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ItemHealthLabel.Location = new System.Drawing.Point(5, 216);
             this.ItemHealthLabel.Name = "ItemHealthLabel";
-            this.ItemHealthLabel.Size = new System.Drawing.Size(263, 25);
+            this.ItemHealthLabel.Size = new System.Drawing.Size(221, 20);
             this.ItemHealthLabel.TabIndex = 19;
             this.ItemHealthLabel.Text = "Здоровье Баррикад/Машин";
+            this.ItemHealthLabel.Click += new System.EventHandler(this.ItemHealthLabel_Click);
             // 
             // EngineTextBox
             // 
-            this.EngineTextBox.Location = new System.Drawing.Point(345, 244);
-            this.EngineTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.EngineTextBox.Location = new System.Drawing.Point(259, 198);
             this.EngineTextBox.Name = "EngineTextBox";
             this.EngineTextBox.ReadOnly = true;
-            this.EngineTextBox.Size = new System.Drawing.Size(81, 22);
+            this.EngineTextBox.Size = new System.Drawing.Size(62, 20);
             this.EngineTextBox.TabIndex = 20;
             this.EngineTextBox.TabStop = false;
             this.EngineTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -326,31 +314,28 @@
             // 
             this.EngineLabel.AutoSize = true;
             this.EngineLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.EngineLabel.Location = new System.Drawing.Point(8, 241);
-            this.EngineLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.EngineLabel.Location = new System.Drawing.Point(6, 196);
             this.EngineLabel.Name = "EngineLabel";
-            this.EngineLabel.Size = new System.Drawing.Size(119, 25);
+            this.EngineLabel.Size = new System.Drawing.Size(96, 20);
             this.EngineLabel.TabIndex = 21;
             this.EngineLabel.Text = "Двигатель:";
             // 
             // RangeTextBox
             // 
-            this.RangeTextBox.Location = new System.Drawing.Point(345, 170);
-            this.RangeTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.RangeTextBox.Location = new System.Drawing.Point(259, 138);
             this.RangeTextBox.Name = "RangeTextBox";
             this.RangeTextBox.ReadOnly = true;
-            this.RangeTextBox.Size = new System.Drawing.Size(81, 22);
+            this.RangeTextBox.Size = new System.Drawing.Size(62, 20);
             this.RangeTextBox.TabIndex = 0;
             this.RangeTextBox.TabStop = false;
             this.RangeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ItemType2TextBox
             // 
-            this.ItemType2TextBox.Location = new System.Drawing.Point(345, 219);
-            this.ItemType2TextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.ItemType2TextBox.Location = new System.Drawing.Point(259, 178);
             this.ItemType2TextBox.Name = "ItemType2TextBox";
             this.ItemType2TextBox.ReadOnly = true;
-            this.ItemType2TextBox.Size = new System.Drawing.Size(81, 22);
+            this.ItemType2TextBox.Size = new System.Drawing.Size(62, 20);
             this.ItemType2TextBox.TabIndex = 1;
             this.ItemType2TextBox.TabStop = false;
             this.ItemType2TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -359,10 +344,9 @@
             // 
             this.RangeLabel.AutoSize = true;
             this.RangeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.RangeLabel.Location = new System.Drawing.Point(8, 167);
-            this.RangeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.RangeLabel.Location = new System.Drawing.Point(6, 136);
             this.RangeLabel.Name = "RangeLabel";
-            this.RangeLabel.Size = new System.Drawing.Size(121, 25);
+            this.RangeLabel.Size = new System.Drawing.Size(97, 20);
             this.RangeLabel.TabIndex = 2;
             this.RangeLabel.Text = "Дальность:";
             // 
@@ -370,32 +354,29 @@
             // 
             this.ItemType2Label.AutoSize = true;
             this.ItemType2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ItemType2Label.Location = new System.Drawing.Point(8, 217);
-            this.ItemType2Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ItemType2Label.Location = new System.Drawing.Point(6, 176);
             this.ItemType2Label.Name = "ItemType2Label";
-            this.ItemType2Label.Size = new System.Drawing.Size(168, 25);
+            this.ItemType2Label.Size = new System.Drawing.Size(133, 20);
             this.ItemType2Label.TabIndex = 3;
             this.ItemType2Label.Text = "Тип предмета 2:";
             this.ItemType2Label.Click += new System.EventHandler(this.ItemType2Label_Click);
             // 
             // StructureDamageTextBox
             // 
-            this.StructureDamageTextBox.Location = new System.Drawing.Point(345, 145);
-            this.StructureDamageTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.StructureDamageTextBox.Location = new System.Drawing.Point(259, 118);
             this.StructureDamageTextBox.Name = "StructureDamageTextBox";
             this.StructureDamageTextBox.ReadOnly = true;
-            this.StructureDamageTextBox.Size = new System.Drawing.Size(81, 22);
+            this.StructureDamageTextBox.Size = new System.Drawing.Size(62, 20);
             this.StructureDamageTextBox.TabIndex = 4;
             this.StructureDamageTextBox.TabStop = false;
             this.StructureDamageTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ItemTypeTextBox
             // 
-            this.ItemTypeTextBox.Location = new System.Drawing.Point(345, 194);
-            this.ItemTypeTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.ItemTypeTextBox.Location = new System.Drawing.Point(259, 158);
             this.ItemTypeTextBox.Name = "ItemTypeTextBox";
             this.ItemTypeTextBox.ReadOnly = true;
-            this.ItemTypeTextBox.Size = new System.Drawing.Size(81, 22);
+            this.ItemTypeTextBox.Size = new System.Drawing.Size(62, 20);
             this.ItemTypeTextBox.TabIndex = 5;
             this.ItemTypeTextBox.TabStop = false;
             this.ItemTypeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -404,10 +385,9 @@
             // 
             this.BuildingsDamageLabel.AutoSize = true;
             this.BuildingsDamageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.BuildingsDamageLabel.Location = new System.Drawing.Point(8, 143);
-            this.BuildingsDamageLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.BuildingsDamageLabel.Location = new System.Drawing.Point(6, 116);
             this.BuildingsDamageLabel.Name = "BuildingsDamageLabel";
-            this.BuildingsDamageLabel.Size = new System.Drawing.Size(182, 25);
+            this.BuildingsDamageLabel.Size = new System.Drawing.Size(144, 20);
             this.BuildingsDamageLabel.TabIndex = 6;
             this.BuildingsDamageLabel.Text = "Урон постройкам:";
             this.BuildingsDamageLabel.Click += new System.EventHandler(this.BuildingsDamageLabel_Click);
@@ -416,31 +396,28 @@
             // 
             this.ItemTypeLabel.AutoSize = true;
             this.ItemTypeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ItemTypeLabel.Location = new System.Drawing.Point(8, 192);
-            this.ItemTypeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ItemTypeLabel.Location = new System.Drawing.Point(6, 156);
             this.ItemTypeLabel.Name = "ItemTypeLabel";
-            this.ItemTypeLabel.Size = new System.Drawing.Size(152, 25);
+            this.ItemTypeLabel.Size = new System.Drawing.Size(120, 20);
             this.ItemTypeLabel.TabIndex = 7;
             this.ItemTypeLabel.Text = "Тип предмета:";
             // 
             // PlayerDamageTextBox
             // 
-            this.PlayerDamageTextBox.Location = new System.Drawing.Point(345, 121);
-            this.PlayerDamageTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.PlayerDamageTextBox.Location = new System.Drawing.Point(259, 98);
             this.PlayerDamageTextBox.Name = "PlayerDamageTextBox";
             this.PlayerDamageTextBox.ReadOnly = true;
-            this.PlayerDamageTextBox.Size = new System.Drawing.Size(81, 22);
+            this.PlayerDamageTextBox.Size = new System.Drawing.Size(62, 20);
             this.PlayerDamageTextBox.TabIndex = 8;
             this.PlayerDamageTextBox.TabStop = false;
             this.PlayerDamageTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // DamageHeadTextBox
             // 
-            this.DamageHeadTextBox.Location = new System.Drawing.Point(345, 71);
-            this.DamageHeadTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.DamageHeadTextBox.Location = new System.Drawing.Point(259, 58);
             this.DamageHeadTextBox.Name = "DamageHeadTextBox";
             this.DamageHeadTextBox.ReadOnly = true;
-            this.DamageHeadTextBox.Size = new System.Drawing.Size(81, 22);
+            this.DamageHeadTextBox.Size = new System.Drawing.Size(62, 20);
             this.DamageHeadTextBox.TabIndex = 9;
             this.DamageHeadTextBox.TabStop = false;
             this.DamageHeadTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -449,42 +426,38 @@
             // 
             this.PlayerDamageLabel.AutoSize = true;
             this.PlayerDamageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PlayerDamageLabel.Location = new System.Drawing.Point(8, 118);
-            this.PlayerDamageLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.PlayerDamageLabel.Location = new System.Drawing.Point(6, 96);
             this.PlayerDamageLabel.Name = "PlayerDamageLabel";
-            this.PlayerDamageLabel.Size = new System.Drawing.Size(129, 25);
+            this.PlayerDamageLabel.Size = new System.Drawing.Size(105, 20);
             this.PlayerDamageLabel.TabIndex = 10;
             this.PlayerDamageLabel.Text = "Урон игрока:";
             // 
             // BodyDamageTextBox
             // 
-            this.BodyDamageTextBox.Location = new System.Drawing.Point(345, 96);
-            this.BodyDamageTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.BodyDamageTextBox.Location = new System.Drawing.Point(259, 78);
             this.BodyDamageTextBox.Name = "BodyDamageTextBox";
             this.BodyDamageTextBox.ReadOnly = true;
-            this.BodyDamageTextBox.Size = new System.Drawing.Size(81, 22);
+            this.BodyDamageTextBox.Size = new System.Drawing.Size(62, 20);
             this.BodyDamageTextBox.TabIndex = 11;
             this.BodyDamageTextBox.TabStop = false;
             this.BodyDamageTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ItemCapacityTextBox
             // 
-            this.ItemCapacityTextBox.Location = new System.Drawing.Point(345, 22);
-            this.ItemCapacityTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.ItemCapacityTextBox.Location = new System.Drawing.Point(259, 18);
             this.ItemCapacityTextBox.Name = "ItemCapacityTextBox";
             this.ItemCapacityTextBox.ReadOnly = true;
-            this.ItemCapacityTextBox.Size = new System.Drawing.Size(81, 22);
+            this.ItemCapacityTextBox.Size = new System.Drawing.Size(62, 20);
             this.ItemCapacityTextBox.TabIndex = 12;
             this.ItemCapacityTextBox.TabStop = false;
             this.ItemCapacityTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ProtectionTextBox
             // 
-            this.ProtectionTextBox.Location = new System.Drawing.Point(345, 47);
-            this.ProtectionTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.ProtectionTextBox.Location = new System.Drawing.Point(259, 38);
             this.ProtectionTextBox.Name = "ProtectionTextBox";
             this.ProtectionTextBox.ReadOnly = true;
-            this.ProtectionTextBox.Size = new System.Drawing.Size(81, 22);
+            this.ProtectionTextBox.Size = new System.Drawing.Size(62, 20);
             this.ProtectionTextBox.TabIndex = 13;
             this.ProtectionTextBox.TabStop = false;
             this.ProtectionTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -493,10 +466,9 @@
             // 
             this.BodyDamageLabel.AutoSize = true;
             this.BodyDamageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.BodyDamageLabel.Location = new System.Drawing.Point(8, 94);
-            this.BodyDamageLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.BodyDamageLabel.Location = new System.Drawing.Point(6, 76);
             this.BodyDamageLabel.Name = "BodyDamageLabel";
-            this.BodyDamageLabel.Size = new System.Drawing.Size(128, 25);
+            this.BodyDamageLabel.Size = new System.Drawing.Size(101, 20);
             this.BodyDamageLabel.TabIndex = 14;
             this.BodyDamageLabel.Text = "Урон (Тело):";
             this.BodyDamageLabel.Click += new System.EventHandler(this.BodyDamageLabel_Click);
@@ -505,10 +477,9 @@
             // 
             this.HeadDamageLabel.AutoSize = true;
             this.HeadDamageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.HeadDamageLabel.Location = new System.Drawing.Point(8, 69);
-            this.HeadDamageLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.HeadDamageLabel.Location = new System.Drawing.Point(6, 56);
             this.HeadDamageLabel.Name = "HeadDamageLabel";
-            this.HeadDamageLabel.Size = new System.Drawing.Size(148, 25);
+            this.HeadDamageLabel.Size = new System.Drawing.Size(119, 20);
             this.HeadDamageLabel.TabIndex = 15;
             this.HeadDamageLabel.Text = "Урон (Голова):";
             // 
@@ -516,10 +487,9 @@
             // 
             this.ProtectionLabel.AutoSize = true;
             this.ProtectionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ProtectionLabel.Location = new System.Drawing.Point(8, 44);
-            this.ProtectionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ProtectionLabel.Location = new System.Drawing.Point(6, 36);
             this.ProtectionLabel.Name = "ProtectionLabel";
-            this.ProtectionLabel.Size = new System.Drawing.Size(128, 25);
+            this.ProtectionLabel.Size = new System.Drawing.Size(101, 20);
             this.ProtectionLabel.TabIndex = 16;
             this.ProtectionLabel.Text = "Защита (%):";
             // 
@@ -527,20 +497,18 @@
             // 
             this.ItemCapacityLabel.AutoSize = true;
             this.ItemCapacityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ItemCapacityLabel.Location = new System.Drawing.Point(8, 20);
-            this.ItemCapacityLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ItemCapacityLabel.Location = new System.Drawing.Point(6, 16);
             this.ItemCapacityLabel.Name = "ItemCapacityLabel";
-            this.ItemCapacityLabel.Size = new System.Drawing.Size(290, 25);
+            this.ItemCapacityLabel.Size = new System.Drawing.Size(236, 20);
             this.ItemCapacityLabel.TabIndex = 17;
             this.ItemCapacityLabel.Text = "Баррикада / одежда ёмкость:";
             this.ItemCapacityLabel.Click += new System.EventHandler(this.ItemCapacityLabel_Click);
             // 
             // SortDamagePlayersBtn
             // 
-            this.SortDamagePlayersBtn.Location = new System.Drawing.Point(13, 95);
-            this.SortDamagePlayersBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.SortDamagePlayersBtn.Location = new System.Drawing.Point(4, 77);
             this.SortDamagePlayersBtn.Name = "SortDamagePlayersBtn";
-            this.SortDamagePlayersBtn.Size = new System.Drawing.Size(329, 28);
+            this.SortDamagePlayersBtn.Size = new System.Drawing.Size(261, 23);
             this.SortDamagePlayersBtn.TabIndex = 4;
             this.SortDamagePlayersBtn.TabStop = false;
             this.SortDamagePlayersBtn.Text = "Сортировка по урону игрокам";
@@ -549,10 +517,9 @@
             // 
             // SortCapacityBtn
             // 
-            this.SortCapacityBtn.Location = new System.Drawing.Point(13, 23);
-            this.SortCapacityBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.SortCapacityBtn.Location = new System.Drawing.Point(4, 19);
             this.SortCapacityBtn.Name = "SortCapacityBtn";
-            this.SortCapacityBtn.Size = new System.Drawing.Size(329, 28);
+            this.SortCapacityBtn.Size = new System.Drawing.Size(261, 23);
             this.SortCapacityBtn.TabIndex = 3;
             this.SortCapacityBtn.TabStop = false;
             this.SortCapacityBtn.Text = "Сортировка по вместимости одежды";
@@ -561,10 +528,9 @@
             // 
             // SortProtectionBtn
             // 
-            this.SortProtectionBtn.Location = new System.Drawing.Point(13, 59);
-            this.SortProtectionBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.SortProtectionBtn.Location = new System.Drawing.Point(4, 48);
             this.SortProtectionBtn.Name = "SortProtectionBtn";
-            this.SortProtectionBtn.Size = new System.Drawing.Size(329, 28);
+            this.SortProtectionBtn.Size = new System.Drawing.Size(261, 23);
             this.SortProtectionBtn.TabIndex = 2;
             this.SortProtectionBtn.TabStop = false;
             this.SortProtectionBtn.Text = "Сортировка по защите одежды";
@@ -584,62 +550,55 @@
             this.SortingGroupBox.Controls.Add(this.SortProtectionBtn);
             this.SortingGroupBox.Controls.Add(this.SortCapacityBtn);
             this.SortingGroupBox.Controls.Add(this.SortDamagePlayersBtn);
-            this.SortingGroupBox.Location = new System.Drawing.Point(517, 29);
+            this.SortingGroupBox.Location = new System.Drawing.Point(518, 29);
+            this.SortingGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SortingGroupBox.Name = "SortingGroupBox";
-            this.SortingGroupBox.Size = new System.Drawing.Size(263, 342);
+            this.SortingGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SortingGroupBox.Size = new System.Drawing.Size(271, 407);
             this.SortingGroupBox.TabIndex = 0;
             this.SortingGroupBox.TabStop = false;
             this.SortingGroupBox.Text = "Сортировка";
             // 
-            // SortByShakeBtn
-            // 
-            this.SortByShakeBtn.Location = new System.Drawing.Point(13, 201);
-            this.SortByShakeBtn.Name = "SortByShakeBtn";
-            this.SortByShakeBtn.Size = new System.Drawing.Size(329, 27);
-            this.SortByShakeBtn.TabIndex = 8;
-            this.SortByShakeBtn.TabStop = false;
-            this.SortByShakeBtn.Text = "Сортировать по множителю разброса модулей";
-            this.SortByShakeBtn.UseVisualStyleBackColor = true;
-            this.SortByShakeBtn.Click += new System.EventHandler(this.SortByShakeBtn_Click);
-            // 
             // SortByBarrelDamageBtn
             // 
-            this.SortByBarrelDamageBtn.Location = new System.Drawing.Point(10, 251);
+            this.SortByBarrelDamageBtn.Location = new System.Drawing.Point(4, 277);
+            this.SortByBarrelDamageBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SortByBarrelDamageBtn.Name = "SortByBarrelDamageBtn";
-            this.SortByBarrelDamageBtn.Size = new System.Drawing.Size(247, 23);
+            this.SortByBarrelDamageBtn.Size = new System.Drawing.Size(261, 24);
             this.SortByBarrelDamageBtn.TabIndex = 10;
             this.SortByBarrelDamageBtn.TabStop = false;
-            this.SortByBarrelDamageBtn.Text = "Sort by barrel damage";
+            this.SortByBarrelDamageBtn.Text = "Сортировать по урону модуля";
             this.SortByBarrelDamageBtn.UseVisualStyleBackColor = true;
             this.SortByBarrelDamageBtn.Click += new System.EventHandler(this.SortByBarrelDamageBtn_Click);
             // 
             // SortByVolumeBtn
             // 
-            this.SortByVolumeBtn.Location = new System.Drawing.Point(10, 280);
+            this.SortByVolumeBtn.Location = new System.Drawing.Point(4, 249);
+            this.SortByVolumeBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SortByVolumeBtn.Name = "SortByVolumeBtn";
-            this.SortByVolumeBtn.Size = new System.Drawing.Size(247, 23);
+            this.SortByVolumeBtn.Size = new System.Drawing.Size(261, 24);
             this.SortByVolumeBtn.TabIndex = 9;
             this.SortByVolumeBtn.TabStop = false;
-            this.SortByVolumeBtn.Text = "Sort by barrel volume";
+            this.SortByVolumeBtn.Text = "Сортировать по звуку модуля";
             this.SortByVolumeBtn.Click += new System.EventHandler(this.SortByVolumeBtn_Click);
             // 
             // SortByShakeBtn
             // 
-            this.SortByShakeBtn.Location = new System.Drawing.Point(10, 222);
+            this.SortByShakeBtn.Location = new System.Drawing.Point(4, 193);
+            this.SortByShakeBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SortByShakeBtn.Name = "SortByShakeBtn";
-            this.SortByShakeBtn.Size = new System.Drawing.Size(247, 23);
+            this.SortByShakeBtn.Size = new System.Drawing.Size(263, 24);
             this.SortByShakeBtn.TabIndex = 8;
             this.SortByShakeBtn.TabStop = false;
-            this.SortByShakeBtn.Text = "Sort by shake";
+            this.SortByShakeBtn.Text = "Сортировать по множетелю разброса на модуль";
             this.SortByShakeBtn.UseVisualStyleBackColor = true;
             this.SortByShakeBtn.Click += new System.EventHandler(this.SortByShakeBtn_Click);
             // 
             // SortByBuildingHealthBtn
             // 
-            this.SortByBuildingHealthBtn.Location = new System.Drawing.Point(13, 270);
-            this.SortByBuildingHealthBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.SortByBuildingHealthBtn.Location = new System.Drawing.Point(4, 134);
             this.SortByBuildingHealthBtn.Name = "SortByBuildingHealthBtn";
-            this.SortByBuildingHealthBtn.Size = new System.Drawing.Size(330, 28);
+            this.SortByBuildingHealthBtn.Size = new System.Drawing.Size(261, 23);
             this.SortByBuildingHealthBtn.TabIndex = 7;
             this.SortByBuildingHealthBtn.TabStop = false;
             this.SortByBuildingHealthBtn.Text = "Сортировать по HP постройки";
@@ -648,22 +607,32 @@
             // 
             // SortBarricadeCapacityBtn
             // 
-            this.SortBarricadeCapacityBtn.Location = new System.Drawing.Point(13, 235);
-            this.SortBarricadeCapacityBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.SortBarricadeCapacityBtn.Location = new System.Drawing.Point(4, 221);
             this.SortBarricadeCapacityBtn.Name = "SortBarricadeCapacityBtn";
-            this.SortBarricadeCapacityBtn.Size = new System.Drawing.Size(329, 27);
+            this.SortBarricadeCapacityBtn.Size = new System.Drawing.Size(263, 24);
             this.SortBarricadeCapacityBtn.TabIndex = 6;
             this.SortBarricadeCapacityBtn.TabStop = false;
             this.SortBarricadeCapacityBtn.Text = "Сортировать по вместительности баррикад";
             this.SortBarricadeCapacityBtn.UseVisualStyleBackColor = true;
             this.SortBarricadeCapacityBtn.Click += new System.EventHandler(this.SortBarricadeCapacityBtn_Click);
             // 
+            // MixBtn
+            // 
+            this.MixBtn.Location = new System.Drawing.Point(4, 305);
+            this.MixBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MixBtn.Name = "MixBtn";
+            this.MixBtn.Size = new System.Drawing.Size(261, 23);
+            this.MixBtn.TabIndex = 1;
+            this.MixBtn.TabStop = false;
+            this.MixBtn.Text = "Перемешать";
+            this.MixBtn.UseVisualStyleBackColor = true;
+            this.MixBtn.Click += new System.EventHandler(this.MixBtn_Click);
+            // 
             // SortVehicleHealthBtn
             // 
-            this.SortVehicleHealthBtn.Location = new System.Drawing.Point(13, 166);
-            this.SortVehicleHealthBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.SortVehicleHealthBtn.Location = new System.Drawing.Point(4, 164);
             this.SortVehicleHealthBtn.Name = "SortVehicleHealthBtn";
-            this.SortVehicleHealthBtn.Size = new System.Drawing.Size(329, 28);
+            this.SortVehicleHealthBtn.Size = new System.Drawing.Size(261, 24);
             this.SortVehicleHealthBtn.TabIndex = 5;
             this.SortVehicleHealthBtn.TabStop = false;
             this.SortVehicleHealthBtn.Text = "Сортировка по HP автомобиля";
@@ -672,32 +641,20 @@
             // 
             // SortDamageBuildingsBtn
             // 
-            this.SortDamageBuildingsBtn.Location = new System.Drawing.Point(13, 130);
-            this.SortDamageBuildingsBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.SortDamageBuildingsBtn.Location = new System.Drawing.Point(4, 106);
             this.SortDamageBuildingsBtn.Name = "SortDamageBuildingsBtn";
-            this.SortDamageBuildingsBtn.Size = new System.Drawing.Size(329, 28);
+            this.SortDamageBuildingsBtn.Size = new System.Drawing.Size(261, 23);
             this.SortDamageBuildingsBtn.TabIndex = 0;
             this.SortDamageBuildingsBtn.TabStop = false;
             this.SortDamageBuildingsBtn.Text = "Сортировка по урону постройкам";
             this.SortDamageBuildingsBtn.UseVisualStyleBackColor = true;
             this.SortDamageBuildingsBtn.Click += new System.EventHandler(this.SortDamageBuildingsBtn_Click);
             // 
-            // MixBtn
-            // 
-            this.MixBtn.Location = new System.Drawing.Point(10, 309);
-            this.MixBtn.Name = "MixBtn";
-            this.MixBtn.Size = new System.Drawing.Size(329, 28);
-            this.MixBtn.TabIndex = 1;
-            this.MixBtn.TabStop = false;
-            this.MixBtn.Text = "Перемешать";
-            this.MixBtn.UseVisualStyleBackColor = true;
-            this.MixBtn.Click += new System.EventHandler(this.MixBtn_Click);
-            // 
             // itemList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1056, 517);
+            this.ClientSize = new System.Drawing.Size(800, 445);
             this.Controls.Add(this.SortingGroupBox);
             this.Controls.Add(this.ItemStatsGroupBox);
             this.Controls.Add(this.InfoGroupBox);
@@ -705,7 +662,6 @@
             this.Controls.Add(this.ResultsLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "itemList";
             this.Text = "Список предметов";

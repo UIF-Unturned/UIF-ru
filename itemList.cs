@@ -249,5 +249,35 @@ namespace UIF
 
 			updateItemList();
 		}
-	}
+
+        private void VolumeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ItemHealthLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BarrelDamageLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ShakeTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VolumeTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ItemHealthTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
