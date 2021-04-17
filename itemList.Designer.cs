@@ -38,6 +38,10 @@
             this.NameLabel = new System.Windows.Forms.Label();
             this.IdToClipboard = new System.Windows.Forms.Button();
             this.ItemStatsGroupBox = new System.Windows.Forms.GroupBox();
+            this.BarrelDamageTextBox = new System.Windows.Forms.TextBox();
+            this.BarrelDamageLabel = new System.Windows.Forms.Label();
+            this.VolumeTextBox = new System.Windows.Forms.TextBox();
+            this.VolumeLabel = new System.Windows.Forms.Label();
             this.ShakeTextBox = new System.Windows.Forms.TextBox();
             this.ShakeLabel = new System.Windows.Forms.Label();
             this.ItemHealthTextBox = new System.Windows.Forms.TextBox();
@@ -66,6 +70,8 @@
             this.SortCapacityBtn = new System.Windows.Forms.Button();
             this.SortProtectionBtn = new System.Windows.Forms.Button();
             this.SortingGroupBox = new System.Windows.Forms.GroupBox();
+            this.SortByBarrelDamageBtn = new System.Windows.Forms.Button();
+            this.SortByVolumeBtn = new System.Windows.Forms.Button();
             this.SortByShakeBtn = new System.Windows.Forms.Button();
             this.SortByBuildingHealthBtn = new System.Windows.Forms.Button();
             this.SortBarricadeCapacityBtn = new System.Windows.Forms.Button();
@@ -176,6 +182,10 @@
             // 
             // ItemStatsGroupBox
             // 
+            this.ItemStatsGroupBox.Controls.Add(this.BarrelDamageTextBox);
+            this.ItemStatsGroupBox.Controls.Add(this.BarrelDamageLabel);
+            this.ItemStatsGroupBox.Controls.Add(this.VolumeTextBox);
+            this.ItemStatsGroupBox.Controls.Add(this.VolumeLabel);
             this.ItemStatsGroupBox.Controls.Add(this.ShakeTextBox);
             this.ItemStatsGroupBox.Controls.Add(this.ShakeLabel);
             this.ItemStatsGroupBox.Controls.Add(this.ItemHealthTextBox);
@@ -203,8 +213,7 @@
             this.ItemStatsGroupBox.Location = new System.Drawing.Point(247, 158);
             this.ItemStatsGroupBox.Margin = new System.Windows.Forms.Padding(4);
             this.ItemStatsGroupBox.Name = "ItemStatsGroupBox";
-            this.ItemStatsGroupBox.Padding = new System.Windows.Forms.Padding(4);
-            this.ItemStatsGroupBox.Size = new System.Drawing.Size(437, 347);
+            this.ItemStatsGroupBox.Size = new System.Drawing.Size(328, 308);
             this.ItemStatsGroupBox.TabIndex = 4;
             this.ItemStatsGroupBox.TabStop = false;
             this.ItemStatsGroupBox.Text = "Item Stats";
@@ -215,6 +224,52 @@
             this.ShakeTextBox.Name = "ShakeTextBox";
             this.ShakeTextBox.ReadOnly = true;
             this.ShakeTextBox.Size = new System.Drawing.Size(81, 22);
+            // BarrelDamageTextBox
+            // 
+            this.BarrelDamageTextBox.Location = new System.Drawing.Point(259, 278);
+            this.BarrelDamageTextBox.Name = "BarrelDamageTextBox";
+            this.BarrelDamageTextBox.ReadOnly = true;
+            this.BarrelDamageTextBox.Size = new System.Drawing.Size(62, 20);
+            this.BarrelDamageTextBox.TabIndex = 26;
+            this.BarrelDamageTextBox.TabStop = false;
+            this.BarrelDamageTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // BarrelDamageLabel
+            // 
+            this.BarrelDamageLabel.AutoSize = true;
+            this.BarrelDamageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BarrelDamageLabel.Location = new System.Drawing.Point(6, 276);
+            this.BarrelDamageLabel.Name = "BarrelDamageLabel";
+            this.BarrelDamageLabel.Size = new System.Drawing.Size(117, 20);
+            this.BarrelDamageLabel.TabIndex = 27;
+            this.BarrelDamageLabel.Text = "Barrel damage:";
+            // 
+            // VolumeTextBox
+            // 
+            this.VolumeTextBox.Location = new System.Drawing.Point(259, 258);
+            this.VolumeTextBox.Name = "VolumeTextBox";
+            this.VolumeTextBox.ReadOnly = true;
+            this.VolumeTextBox.Size = new System.Drawing.Size(62, 20);
+            this.VolumeTextBox.TabIndex = 24;
+            this.VolumeTextBox.TabStop = false;
+            this.VolumeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // VolumeLabel
+            // 
+            this.VolumeLabel.AutoSize = true;
+            this.VolumeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.VolumeLabel.Location = new System.Drawing.Point(6, 256);
+            this.VolumeLabel.Name = "VolumeLabel";
+            this.VolumeLabel.Size = new System.Drawing.Size(215, 20);
+            this.VolumeLabel.TabIndex = 25;
+            this.VolumeLabel.Text = "Suppressor volume multiplier:";
+            // 
+            // ShakeTextBox
+            // 
+            this.ShakeTextBox.Location = new System.Drawing.Point(259, 238);
+            this.ShakeTextBox.Name = "ShakeTextBox";
+            this.ShakeTextBox.ReadOnly = true;
+            this.ShakeTextBox.Size = new System.Drawing.Size(62, 20);
             this.ShakeTextBox.TabIndex = 22;
             this.ShakeTextBox.TabStop = false;
             this.ShakeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -223,11 +278,16 @@
             // 
             this.ShakeLabel.AutoSize = true;
             this.ShakeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ShakeLabel.Location = new System.Drawing.Point(8, 290);
-            this.ShakeLabel.Name = "ShakeLabel";
             this.ShakeLabel.Size = new System.Drawing.Size(315, 25);
             this.ShakeLabel.TabIndex = 23;
+            this.ShakeLabel.Location = new System.Drawing.Point(8, 290);
+            this.ShakeLabel.Name = "ShakeLabel";
             this.ShakeLabel.Text = "Множитель разброса на модуль";
+            this.ShakeLabel.Location = new System.Drawing.Point(6, 236);
+            this.ShakeLabel.Name = "ShakeLabel";
+            this.ShakeLabel.Size = new System.Drawing.Size(202, 20);
+            this.ShakeLabel.TabIndex = 23;
+            this.ShakeLabel.Text = "Grip/Barrel shake multiplier:";
             // 
             // ItemHealthTextBox
             // 
@@ -513,6 +573,8 @@
             // 
             // SortingGroupBox
             // 
+            this.SortingGroupBox.Controls.Add(this.SortByBarrelDamageBtn);
+            this.SortingGroupBox.Controls.Add(this.SortByVolumeBtn);
             this.SortingGroupBox.Controls.Add(this.SortByShakeBtn);
             this.SortingGroupBox.Controls.Add(this.SortByBuildingHealthBtn);
             this.SortingGroupBox.Controls.Add(this.SortBarricadeCapacityBtn);
@@ -522,11 +584,9 @@
             this.SortingGroupBox.Controls.Add(this.SortProtectionBtn);
             this.SortingGroupBox.Controls.Add(this.SortCapacityBtn);
             this.SortingGroupBox.Controls.Add(this.SortDamagePlayersBtn);
-            this.SortingGroupBox.Location = new System.Drawing.Point(692, 158);
-            this.SortingGroupBox.Margin = new System.Windows.Forms.Padding(4);
+            this.SortingGroupBox.Location = new System.Drawing.Point(517, 29);
             this.SortingGroupBox.Name = "SortingGroupBox";
-            this.SortingGroupBox.Padding = new System.Windows.Forms.Padding(4);
-            this.SortingGroupBox.Size = new System.Drawing.Size(351, 347);
+            this.SortingGroupBox.Size = new System.Drawing.Size(263, 342);
             this.SortingGroupBox.TabIndex = 0;
             this.SortingGroupBox.TabStop = false;
             this.SortingGroupBox.Text = "Сортировка";
@@ -539,6 +599,38 @@
             this.SortByShakeBtn.TabIndex = 8;
             this.SortByShakeBtn.TabStop = false;
             this.SortByShakeBtn.Text = "Сортировать по множителю разброса модулей";
+            this.SortByShakeBtn.UseVisualStyleBackColor = true;
+            this.SortByShakeBtn.Click += new System.EventHandler(this.SortByShakeBtn_Click);
+            // 
+            // SortByBarrelDamageBtn
+            // 
+            this.SortByBarrelDamageBtn.Location = new System.Drawing.Point(10, 251);
+            this.SortByBarrelDamageBtn.Name = "SortByBarrelDamageBtn";
+            this.SortByBarrelDamageBtn.Size = new System.Drawing.Size(247, 23);
+            this.SortByBarrelDamageBtn.TabIndex = 10;
+            this.SortByBarrelDamageBtn.TabStop = false;
+            this.SortByBarrelDamageBtn.Text = "Sort by barrel damage";
+            this.SortByBarrelDamageBtn.UseVisualStyleBackColor = true;
+            this.SortByBarrelDamageBtn.Click += new System.EventHandler(this.SortByBarrelDamageBtn_Click);
+            // 
+            // SortByVolumeBtn
+            // 
+            this.SortByVolumeBtn.Location = new System.Drawing.Point(10, 280);
+            this.SortByVolumeBtn.Name = "SortByVolumeBtn";
+            this.SortByVolumeBtn.Size = new System.Drawing.Size(247, 23);
+            this.SortByVolumeBtn.TabIndex = 9;
+            this.SortByVolumeBtn.TabStop = false;
+            this.SortByVolumeBtn.Text = "Sort by barrel volume";
+            this.SortByVolumeBtn.Click += new System.EventHandler(this.SortByVolumeBtn_Click);
+            // 
+            // SortByShakeBtn
+            // 
+            this.SortByShakeBtn.Location = new System.Drawing.Point(10, 222);
+            this.SortByShakeBtn.Name = "SortByShakeBtn";
+            this.SortByShakeBtn.Size = new System.Drawing.Size(247, 23);
+            this.SortByShakeBtn.TabIndex = 8;
+            this.SortByShakeBtn.TabStop = false;
+            this.SortByShakeBtn.Text = "Sort by shake";
             this.SortByShakeBtn.UseVisualStyleBackColor = true;
             this.SortByShakeBtn.Click += new System.EventHandler(this.SortByShakeBtn_Click);
             // 
@@ -592,8 +684,7 @@
             // 
             // MixBtn
             // 
-            this.MixBtn.Location = new System.Drawing.Point(14, 306);
-            this.MixBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.MixBtn.Location = new System.Drawing.Point(10, 309);
             this.MixBtn.Name = "MixBtn";
             this.MixBtn.Size = new System.Drawing.Size(329, 28);
             this.MixBtn.TabIndex = 1;
@@ -672,5 +763,11 @@
         private System.Windows.Forms.Button SortByShakeBtn;
         private System.Windows.Forms.TextBox ShakeTextBox;
         private System.Windows.Forms.Label ShakeLabel;
+        private System.Windows.Forms.TextBox VolumeTextBox;
+        private System.Windows.Forms.Label VolumeLabel;
+        private System.Windows.Forms.Button SortByVolumeBtn;
+        private System.Windows.Forms.TextBox BarrelDamageTextBox;
+        private System.Windows.Forms.Label BarrelDamageLabel;
+        private System.Windows.Forms.Button SortByBarrelDamageBtn;
     }
 }
